@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["../*.html"],
+  purge: ["../*.html", "../static/app.js"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
@@ -16,9 +16,9 @@ module.exports = {
   },
   variants: {
     extend: {
-      display: ["group-hover"],
-      transform: ["group-hover"],
-      scale: ["group-hover"],
+      display: ["group-hover", "dark"],
+      transform: ["group-hover", "dark"],
+      scale: ["group-hover", "dark"],
     },
   },
   plugins: [],
